@@ -1,0 +1,65 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# Distribution / packaging
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+
+# Virtual environment
+venv/
+.env/
+.env.* 
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Test cache
+.cache/
+pytest_cache/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Logs and misc
+*.log
+
+# Ignore config overrides or secrets
+config/*.local.yaml
+config/*.secret.yaml
+
+# Ignore example outputs
+examples/__pycache__/
+examples/*.pyc
+examples/*.log
+
+# Ignore compiled C files if present
+*.c
+*.o
+*.out
+
+# Ignore user-specific runtime files
+*.bak
+
+# VSCode Python debug
+*.env.json
+
+# Compiled Python wheel
+*.whl
