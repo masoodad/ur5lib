@@ -2,6 +2,8 @@
 name = "ur5lib"
 version = "0.1.0"
 description = "Modular Python library for controlling a UR5 robot (real/sim)"
+readme = "README.md"
+license = { text = "MIT" }
 authors = [
     { name = "Masood Ahmad" }
 ]
