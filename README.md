@@ -56,18 +56,19 @@
 
 
 
-##🚀 Quick Start
+## 🚀 Quick Start
 1. Clone the Repository
 bash
-Copy
-Edit
+```
 git clone https://github.com/yourusername/ur5lib.git
 cd ur5lib
+```
+
 2. Install (Editable Mode)
 bash
-Copy
-Edit
+```
 pip install -e .
+```
 Ensure you have Python 3.7+ and ur_rtde if working with real robots.
 
 3. Try an Example
@@ -84,48 +85,52 @@ bash
 ur5lib-cli --help
 ```
 
-##🛠️ Configuration
+## 🛠️ Configuration
 
 Robot parameters are managed via YAML:
 
 yaml
-Copy
-Edit
+```
 # config/default_config.yaml
 robot:
   ip: "192.168.0.10"
   port: 30004
   use_sim: true
+```
 You can override this in your scripts or by passing CLI arguments.
 
-🧪 Running Tests
+## 🧪 Running Tests
 This project uses Python's built-in unittest framework.
 
 bash
-Copy
-Edit
+```
 python -m unittest discover tests
+```
+
 Or use pytest if installed:
 
 bash
-Copy
-Edit
+```
 pytest tests/
-🧰 CLI Usage
+```
+
+## 🧰 CLI Usage
 The command-line interface is registered as:
 
 bash
-Copy
-Edit
+```
 ur5lib-cli
+```
+
 You can extend it in cli.py to support features like:
 
 bash
-Copy
-Edit
+```
 ur5lib-cli plan --target pose.yaml
 ur5lib-cli execute --path planned_path.json
-🧠 Modules Overview
+```
+
+## 🧠 Modules Overview
 Module	Description
 core.py	Base class combining planner + executor
 motion/	Planning & execution logic
@@ -134,40 +139,41 @@ tools/	Utilities, math, transforms
 types/	Typed definitions (poses, joints, etc.)
 exceptions.py	Custom exception hierarchy
 
-📓 Examples
+## 📓 Examples
 See the examples/ directory for usage:
 
 demo_joint_motion.py — run simulated motion
 
 ur5lib_test.ipynb — notebook for interactive experiments
 
-📦 Packaging
+## 📦 Packaging
 Build wheel and source distribution:
 
 bash
-Copy
-Edit
+```
 python setup.py sdist bdist_wheel
+```
+
 Generated files will appear in dist/:
 
 pgsql
-Copy
-Edit
+```
 dist/
 ├── ur5lib-0.1.0-py3-none-any.whl
 ├── ur5lib-0.1.0.tar.gz
+```
 📄 License
 MIT License. See LICENSE for details.
 
-👤 Author
+## 👤 Author
 Masood Ahmad
 Robotics & Automation Engineer
 
-🙋‍♂️ Contributing
+## 🙋‍♂️ Contributing
 Pull requests, issues, and suggestions welcome!
 Fork the repo → create a branch → submit a PR ✅
 
-🧭 Future Ideas
+## 🧭 Future Ideas
 Support for UR10 / UR3
 
 GUI for live visualization
