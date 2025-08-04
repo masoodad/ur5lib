@@ -2,7 +2,7 @@
 
 **UR5Lib** is a modular Python library designed to interface with and control a **Universal Robots UR5** robotic arm. It supports both **real hardware** via `ur_rtde` and **simulation** via custom simulators.
 
----
+
 
 ## 📦 Features
 
@@ -14,7 +14,7 @@
 - 🔧 Configurable via YAML files
 - 🧪 Test suite using `unittest`
 
----
+
 
 ## 📁 Project Structure
 
