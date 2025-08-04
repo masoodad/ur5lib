@@ -51,11 +51,12 @@
 ├── setup.py                      # setuptools build script
 ├── README.md                     # Project documentation
 
+```
 
 
 
 
-🚀 Quick Start
+##🚀 Quick Start
 1. Clone the Repository
 bash
 Copy
@@ -73,16 +74,18 @@ Ensure you have Python 3.7+ and ur_rtde if working with real robots.
 Run a demo with simulated motion:
 
 bash
-Copy
-Edit
+```
 python examples/demo_joint_motion.py
+```
 Or launch the CLI:
 
 bash
-Copy
-Edit
+```
 ur5lib-cli --help
-🛠️ Configuration
+```
+
+##🛠️ Configuration
+
 Robot parameters are managed via YAML:
 
 yaml
