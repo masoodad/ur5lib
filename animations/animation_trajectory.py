@@ -109,7 +109,8 @@ def _make_panel(fig, pos, data: dict, lim: float):
     desc       = data.get("desc", "")
     accent     = data.get("accent", LINK_COLORS[0])
 
-    title_lines = [f"$\\bf{{{name.replace(' ', '\\ ')}}}$"]
+    name_escaped = name.replace(' ', '\\ ')
+    title_lines = [f"$\\bf{{{name_escaped}}}$"]
     if best_for:
         title_lines.append(f"Best for: {best_for}")
     if complexity or smoothness:
