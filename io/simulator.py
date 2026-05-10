@@ -28,5 +28,12 @@ class UR5Sim(UR5Base):
     def run_motion(self, motion_plan):
         self.log(f"Simulating motion for {len(motion_plan)} points...")
         for point in motion_plan:
+            self.fake_joints = JointAngles(joints=list(point))
             time.sleep(0.1)
         self.log("Simulation done.")
+
+    def servoJ(self, joint_angles: JointAngles,
+               speed=1.0, acceleration=1.0,
+               time=0.008, lookahead_time=0.1, gain=300):
+        """Simulate a single servo step by updating the internal joint state."""
+        self.fake_joints = JointAngles(joints=list(joint_angles.joints))
