@@ -1,7 +1,7 @@
 # ur5lib/motion/planner.py
 
 from typing import List
-from ur5lib.types.common_types import JointAngles, Pose
+from ur5lib.ur5_types.common_types import JointAngles, Pose
 import numpy as np
 
 

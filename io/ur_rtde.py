@@ -1,5 +1,5 @@
 from ur5lib.core import UR5Base
-from ur5lib.types.common_types import Pose, JointAngles
+from ur5lib.ur5_types.common_types import Pose, JointAngles
 from ur5lib.exceptions import NotConnectedError
 
 try:

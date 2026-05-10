@@ -17,7 +17,7 @@ Public API
 import numpy as np
 
 from ur5lib.robots import UR5_DH
-from ur5lib.types.common_types import Pose
+from ur5lib.ur5_types.common_types import Pose
 from ur5lib.exceptions import KinematicsError
 
 

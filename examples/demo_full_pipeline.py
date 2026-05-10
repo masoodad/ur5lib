@@ -49,7 +49,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import numpy as np
 
 # --- Types & robot backends ---
-from ur5lib.types.common_types import JointAngles, Pose
+from ur5lib.ur5_types.common_types import JointAngles, Pose
 from ur5lib.io.simulator import UR5Sim
 
 # --- Trajectory generators ---

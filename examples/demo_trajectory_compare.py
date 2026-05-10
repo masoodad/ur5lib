@@ -31,7 +31,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import numpy as np
 
-from ur5lib.types.common_types import JointAngles
+from ur5lib.ur5_types.common_types import JointAngles
 from ur5lib.trajectories.joint_space     import JointSpaceTrajectory
 from ur5lib.trajectories.cartesian_space import CartesianLinearTrajectory
 from ur5lib.trajectories.spline          import SplineTrajectory

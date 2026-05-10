@@ -43,7 +43,7 @@ import matplotlib.pyplot as plt
 import matplotlib.animation as animation
 import matplotlib.gridspec as gridspec
 
-from ur5lib.types.common_types import JointAngles
+from ur5lib.ur5_types.common_types import JointAngles
 from ur5lib.io.simulator import UR5Sim
 from ur5lib.trajectories.spline import SplineTrajectory
 from ur5lib.control.joint_pid import JointPID

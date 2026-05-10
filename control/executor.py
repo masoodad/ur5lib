@@ -46,7 +46,7 @@ Usage — time-parameterised trajectory (from a profile)
 
 import time as _time
 
-from ur5lib.types.common_types import JointAngles
+from ur5lib.ur5_types.common_types import JointAngles
 from ur5lib.control.joint_pid  import JointPID
 from ur5lib.control.safety     import SafetyChecker
 

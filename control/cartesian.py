@@ -13,7 +13,7 @@ would be expensive to solve analytically.
 Usage
 -----
 >>> from ur5lib.control.cartesian import CartesianController
->>> from ur5lib.types.common_types import Pose
+>>> from ur5lib.ur5_types.common_types import Pose
 >>>
 >>> ctrl = CartesianController(robot, kp=1.5)
 >>> q_cmd = ctrl.step(target_pose=Pose(0.4, 0.0, 0.5, 0.0, 3.14, 0.0), dt=0.008)
@@ -21,7 +21,7 @@ Usage
 
 import numpy as np
 
-from ur5lib.types.common_types import Pose
+from ur5lib.ur5_types.common_types import Pose
 from ur5lib.control.kinematics import tcp_pose, geometric_jacobian
 
 
@@ -106,7 +106,7 @@ class CartesianController:
         -------
         list[float] — final joint configuration reached
         """
-        from ur5lib.types.common_types import JointAngles
+        from ur5lib.ur5_types.common_types import JointAngles
 
         q = list(self.robot.get_joint_angles().joints)
 

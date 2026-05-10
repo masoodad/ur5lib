@@ -15,7 +15,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import numpy as np
 
-from ur5lib.types.common_types import JointAngles
+from ur5lib.ur5_types.common_types import JointAngles
 from ur5lib.animations import forward_kinematics, animate_trajectories
 
 

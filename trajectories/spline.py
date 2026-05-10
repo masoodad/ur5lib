@@ -2,7 +2,7 @@
 
 import numpy as np
 from typing import List
-from ur5lib.types.common_types import JointAngles
+from ur5lib.ur5_types.common_types import JointAngles
 
 
 class SplineTrajectory:

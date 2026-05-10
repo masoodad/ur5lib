@@ -5,7 +5,7 @@ import logging
 from typing import Dict, Any
 
 from .exceptions import NotConnectedError
-from .types.common_types import Pose, JointAngles
+from .ur5_types.common_types import Pose, JointAngles
 
 
 class UR5Base(abc.ABC):

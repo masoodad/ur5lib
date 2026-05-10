@@ -1,6 +1,6 @@
 from ur5lib.io.simulator import UR5Sim
 from ur5lib.motion.executor import MotionExecutor
-from ur5lib.types.common_types import JointAngles
+from ur5lib.ur5_types.common_types import JointAngles
 
 # 1. Make the robot
 robot = UR5Sim()
