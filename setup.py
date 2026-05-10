@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='ur5lib',
-    version='0.1.0',
+    version='1.0.0',
     author='Masood Ahmad',
     description='Modular Python library for controlling a UR5 robot (real/sim)',
     packages=find_packages(),
