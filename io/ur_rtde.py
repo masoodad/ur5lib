@@ -24,6 +24,12 @@ class UR5RTDE(UR5Base):
         Raises:
             ImportError: If the rtde_control or rtde_receive modules are not installed.
         """
+        """
+        Connects to the robot's RTDE interfaces.
+
+        Raises:
+            ImportError: If the rtde_control or rtde_receive modules are not installed.
+        """
         if rtde_control is None or rtde_receive is None:
             raise ImportError("Please install rtde_control_interface and rtde_receive_interface")
         self.rtde_c = rtde_control.RTDEControlInterface(self.robot_ip)
@@ -31,6 +37,15 @@ class UR5RTDE(UR5Base):
         self.log("RTDE interfaces initialized.")
 
     def get_joint_angles(self) -> JointAngles:
+        """
+        Retrieves the current joint angles of the robot.
+
+        Returns:
+            JointAngles: The current joint angles as a JointAngles object.
+
+        Raises:
+            NotConnectedError: If RTDE interface is not connected.
+        """
         """
         Retrieves the current joint angles of the robot.
 
@@ -54,11 +69,29 @@ class UR5RTDE(UR5Base):
         Raises:
             NotConnectedError: If RTDE interface is not connected.
         """
+        """
+        Retrieves the current TCP (tool center point) pose of the robot.
+
+        Returns:
+            Pose: The current TCP pose as a Pose object.
+
+        Raises:
+            NotConnectedError: If RTDE interface is not connected.
+        """
         self.validate_connection()
         tcp = self.rtde_r.getActualTCPPose()
         return Pose(*tcp)
 
     def run_motion(self, motion_plan):
+        """
+        Executes a motion plan given as a sequence of joint configurations.
+
+        Args:
+            motion_plan (list): A list of joint configurations (list or tuple of floats).
+
+        Raises:
+            NotConnectedError: If RTDE interface is not connected.
+        """
         """
         Executes a motion plan given as a sequence of joint configurations.
 
