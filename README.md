@@ -2,6 +2,10 @@
 
 Modular Python library for controlling UR5 robots — supports both a real robot (via RTDE) and a built-in simulator.
 
+## Demo
+
+<video src="video.mp4" controls width="800"></video>
+
 ## Requirements
 
 - Python >= 3.7
