@@ -299,8 +299,9 @@ def animate_control(data: dict,
                     for ax in (ax_pos, ax_err, ax_vel, ax_acc)]
 
     # Shaded error region on position panel for first displayed joint
-    err_fill = ax_pos.fill_between([], [], [], color=colors[0],
-                                   alpha=0.08, label="_nolegend_")
+    # Wrap in a list so the closure can mutate the reference
+    err_fill = [ax_pos.fill_between([], [], [], color=colors[0],
+                                    alpha=0.08, label="_nolegend_")]
 
     # RMS error text overlay on error panel
     rms_txt = ax_err.text(0.98, 0.95, "", transform=ax_err.transAxes,
@@ -352,16 +353,13 @@ def animate_control(data: dict,
 
         # Update shaded error region for the first joint
         j0 = joints[0]
-        err_fill.remove()
-        # Redraw fill_between by patching the axes collection
-        new_fill = ax_pos.fill_between(
+        err_fill[0].remove()
+        err_fill[0] = ax_pos.fill_between(
             t_win,
             q_ref[s, j0],
             q_actual[s, j0],
             color=colors[0], alpha=0.08,
         )
-        all_lines.append(new_fill)   # prevent GC
-        update.__dict__["_fill"] = new_fill  # keep ref
 
         # Cursors
         for ln, ax in zip(cursor_lines,
