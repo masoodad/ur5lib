@@ -4,7 +4,8 @@ Modular Python library for controlling UR5 robots — supports both a real robot
 
 ## Demo
 
-<video src="video.mp4" controls width="800"></video>
+https://github.com/user-attachments/assets/1dbfcccb-96cf-45f8-b4b2-615eb9c1b056
+
 
 ## Requirements
 
