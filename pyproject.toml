@@ -1,6 +1,6 @@
 [project]
 name = "ur5lib"
-version = "1.0.1"
+version = "1.0.2"
 description = "Modular Python library for controlling a UR5 robot (real/sim)"
 readme = "README.md"
 license = { text = "MIT" }

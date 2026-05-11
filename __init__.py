@@ -1,6 +1,6 @@
 # ur5lib/__init__.py
 
-__version__ = '1.0.1'
+__version__ = '1.0.2'
 
 from .core import UR5Base
 from .motion.executor import MotionExecutor
