@@ -4,7 +4,7 @@ _subpackages = [p for p in find_packages() if p not in ('examples', 'testlib')]
 
 setup(
     name='ur5lib',
-    version='1.0.2',
+    version='1.0.3',
     author='Masood Ahmad',
     description='Modular Python library for controlling a UR5 robot (real/sim)',
     packages=['ur5lib'] + ['ur5lib.' + p for p in _subpackages],
