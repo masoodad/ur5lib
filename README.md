@@ -26,7 +26,7 @@ pip install -e .
 Or install directly:
 
 ```bash
-pip install .
+pip install ur5lib
 ```
 
 For real robot support, also install the RTDE package:
