@@ -29,12 +29,6 @@ Or install directly:
 pip install ur5lib
 ```
 
-For real robot support, also install the RTDE package:
-
-```bash
-pip install ur_rtde
-```
-
 ## Quick Start
 
 ### Simulator mode
